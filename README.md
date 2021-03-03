@@ -1,7 +1,4 @@
-# wilson-wdd-130
-This is my final project of my WDD class @ BYUI.
+# WDD 130 Final Project
+Owner: Ammon Wilson
 
-
-Starting over for my new class.
-
-Yeah, that makes sense.
+Semester: Winter 2021
