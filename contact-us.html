@@ -1,7 +1,23 @@
 <script src="js/fake-send.js"></script>
 
 <form method="GET" action="contact-us.html" id="contact-form">
-    [ADD FORM PARTS HERE]
+    <label>
+        <span>Name: </span>
+        <input type="text" name ="name" id = "name" placeholder="Name">
+    </label>
+
+    <label>
+        <span>Subject: </span>
+        <input type="text" name = "subject" id ="subject" placeholder="Subject">
+    </label>
+
+    <label>
+        <span>Message: </span>
+        <textarea name ="message" placeholder="Add your message here!"></textarea>
+    </label>
+
+
     <input type="submit" value="Send Message" id="contact-form-submit">
     <div id="contact-form-message"></div>
 </form>
+

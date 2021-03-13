@@ -3,17 +3,17 @@
     --spacing: 15px;
     --font-size: 1.15rem;
     /* Normal Colors */
-    --background-color: white;
-    --alt-background-color: gainsboro;
-    --font-color: black;
-    --alt-font-color: darkslategray;
-    --border-color: black;
+    --background-color: rgb(240, 206, 114);
+    --alt-background-color:rgba(252, 139, 95, 0.973);
+    --font-color: rgb(102, 36, 177);
+    --alt-font-color: rgb(14, 53, 53);
+    --border-color: rgb(32, 121, 87);
     /* Dark Mode Colors */
-    --dark-background-color: black;
-    --dark-alt-background-color: darkslategray;
-    --dark-font-color: white;
-    --dark-alt-font-color: gainsboro;
-    --dark-border-color: white;
+    --dark-background-color:rgb(53, 49, 80);
+    --dark-alt-background-color: rgb(63, 58, 109);
+    --dark-font-color:  rgb(253, 197, 112);
+    --dark-alt-font-color: rgb(255, 172, 152);
+    --dark-border-color:rgb(255, 142, 49);
 }
 
 html, body {
@@ -27,18 +27,33 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-size: 62.5%;
+    font-size: 70.5%;
 }
 
 header {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto 1fr;
     font-size: var(--font-size);
     padding: var(--spacing);
     border-bottom: 1px solid var(--border-color);
     color: var(--alt-font-color);
     background-color: var(--alt-background-color);
+}
+
+#company-name {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: 60px;
+
+}
+
+.wrap-banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 header a {
@@ -49,6 +64,7 @@ header nav {
     display: flex;
     align-items: center;
     margin-left: auto;
+    font-size: 60px;
 }
 
 header nav ul {
@@ -71,6 +87,53 @@ main {
     background-color: var(--background-color);
 }
 
+
+section.two-cols {
+    display: grid;
+    grid-template-columns: 50% auto;
+
+}
+    
+
+
+section.two-cols.right-column{
+    grid-column: 1;
+    
+  }
+
+  section.two-cols.left-column{
+    grid-column: 1;
+    
+  }
+
+h2 {
+    display: block;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  
+}
+
+img {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+
+p {
+    display: flex;
+    font-size: 40px;
+    word-wrap: break-word;
+    width: auto;
+    height: auto;
+    
+}
+
+
+
 footer {
     display: grid;
     grid-template-rows: auto;
@@ -87,6 +150,7 @@ footer a {
 }
 
 footer #legal {
+    font-size: 30px;
     grid-row: 1;
     grid-column: 1;
     display: flex;
@@ -108,6 +172,7 @@ footer nav ul {
 }
 
 footer nav ul li {
+    font-size: 30px;
     display: inline-block;
     padding: 7.5px;
     margin-right: 7.5px;
