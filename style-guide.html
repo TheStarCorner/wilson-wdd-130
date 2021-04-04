@@ -7,16 +7,53 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style-guide.css">
-
-
-
+    <meta name="author" content="Ammon Wilson">
+    <meta name="keywords" content="Site, Planning, Style, Guide, WDD 130, Web Fundamentals, Courses, Material, Projects, Assignments, CIT, BYUI">
+    <meta name="description" content="This is a homework assignment for WDD 130.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- YOU WILL EDIT THE CODE BELOW TO LOAD YOUR FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <script src="js/dark-mode.js"></script>
   </head>
-  <body>
+  <header>
+    <div id="logo-wrapper">
+      <a href="index.html">
+        <img src="assets/home/comp-logo.png" id="logo" />
+      </a>
+    </div>
+    <div id="company-name">DeliverRiver</div>
+    <nav>
+      <ul>
+        <li>
+          <a href="about-us.html">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="faq.html">
+            FAQ
+          </a>
+        </li>
+        <li>
+          <a href="services.html">
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="contact-us.html">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
     <h1>Final Project Style Guide</h1>
-    <button>Toggle Dark Mode</button>
     <div>
-        <h2>Normal Colors</h2>
+        <h2> Normal Colors </h2>
         <div class="color-wrapper">
             <div class="title">
                 Background
@@ -150,25 +187,7 @@
             Please replace this text with your ideas. Use multiple paragraph tags as needed.
         </p>
     </div>
-    <script>
-        /**
-         * This script adds a listener to the dark mode toggle button.
-         * When it is clicked the class .dark-mode is added or removed
-         * from the body. In our CSS file we added specific rules to
-         * the page when the .dark-mode class is present.
-         */
-        var toggle = document.querySelector('button');
-        if ( toggle ) {
-            toggle.addEventListener( 'click', toggleDarkMode );
-        }
-
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-        }
-    </script>
-</body>
-
-    
+   
     </main>
     <footer>
       <div id="legal">
